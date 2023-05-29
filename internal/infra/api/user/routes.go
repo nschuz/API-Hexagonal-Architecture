@@ -8,11 +8,11 @@ import (
 
 func RegisterRoutes(engine *gin.Engine) {
 
-	//tos s epuede crera en unaa funcion init
+	//SE PUEDE EN UNA FUNCION INIT?
 	userRepo := postgres.NewClient()
 	userService := user.NewService(userRepo)
 	handler := newHandler(userService)
-	//init deentr handler y lo asignamso a avriables globales
+	//INIT DETRO HANDLER -LE ASIGNAMOS VARIABLES GLOABLES
 
 	engine.POST("/api/v1/user", handler.CreateUser)
 

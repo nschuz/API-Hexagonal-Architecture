@@ -21,7 +21,6 @@ var tables = []interface{}{
 	&entity.User{},
 }
 
-
 func connect() *gorm.DB {
 	//si exsite una conexion se ocupe y no crea multiples conexiones
 	//la funcion solo se ejcuta una solavez
@@ -31,7 +30,7 @@ func connect() *gorm.DB {
 			"127.0.0.1",
 			"postgres",
 			"postgres",
-			"gonu",
+			"app",
 			"5433",
 		)
 
