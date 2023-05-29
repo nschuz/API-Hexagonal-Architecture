@@ -1,0 +1,14 @@
+output   = "my_models"
+wipe     = true
+no-tests = true
+add-enum-types = true
+
+[psql]
+  dbname = "insights"
+  host   = "127.0.0.1"
+  port   = 5433
+  user   = "postgres"
+  pass   = "postgres"
+  schema = "public"
+  blacklist = ["migrations", "other"]
+  sslmode = "disable"
